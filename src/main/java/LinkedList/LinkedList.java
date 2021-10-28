@@ -101,7 +101,7 @@ public class LinkedList {
         tail = head = null;
     }
 
-    public int count() {
+    public int size() {
         count = 0;
         Node node = head;
         while (node != null) {
@@ -114,7 +114,7 @@ public class LinkedList {
     public void insertAfter(Node nodeAfter, Node nodeToInsert) {
         Node node = head;
         Node newNode;
-        if(nodeAfter == null && count() == 0){
+        if(nodeAfter == null && size() == 0){
             head = nodeToInsert;
             tail = nodeToInsert;
         } else if (nodeAfter != null) {
@@ -138,7 +138,7 @@ public class LinkedList {
 
     public LinkedList listReturn(LinkedList list, LinkedList list2) {
         LinkedList newList = null;
-        if (list.count() == list2.count()) {
+        if (list.size() == list2.size()) {
             newList = new LinkedList();
             Node node1 = list.head;
             Node node2 = list2.head;

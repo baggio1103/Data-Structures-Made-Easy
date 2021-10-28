@@ -81,9 +81,9 @@ class LinkedListTest {
         list.add(new Node(2));
         list.add(new Node(7));
         list.add(new Node(9));
-        assertEquals(7, list.count());
+        assertEquals(7, list.size());
         list.clear();
-        assertEquals(0, list.count());
+        assertEquals(0, list.size());
     }
 
 }
