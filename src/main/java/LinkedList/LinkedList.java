@@ -136,7 +136,7 @@ public class LinkedList {
         }
     }
 
-    public LinkedList listReturn(LinkedList list, LinkedList list2) {
+    public LinkedList formNewList(LinkedList list, LinkedList list2) {
         LinkedList newList = null;
         if (list.size() == list2.size()) {
             newList = new LinkedList();
