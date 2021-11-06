@@ -30,11 +30,11 @@ public class LinkedList {
         return null;
     }
 
-    public ArrayList<Node> findAll(int _value) {
+    public ArrayList<Node> findAll(int value) {
         ArrayList<Node> nodes = new ArrayList<>();
         Node node = head;
         while (node != null) {
-            if (node.value == _value)
+            if (node.value == value)
                 nodes.add(node);
             node = node.next;
         }
