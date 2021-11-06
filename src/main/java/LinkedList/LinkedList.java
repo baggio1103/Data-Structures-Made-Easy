@@ -44,7 +44,7 @@ public class LinkedList {
     public boolean remove(int value) {
         Node node = head;
         Node newNode;
-        if (head != null) {
+        if (node != null) {
             if (head.value == value) {
                 if (head.next == null) {
                     head = tail = null;

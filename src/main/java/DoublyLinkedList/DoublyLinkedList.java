@@ -47,7 +47,7 @@ public class DoublyLinkedList {
 
     public boolean remove(int value) {
         Node node = head;
-        if (head != null){
+        if (node != null){
             if (head.value == value){
                 if (head.next == null){
                     head = tail = null;

@@ -41,6 +41,7 @@ class DoublyLinkedListTest {
     @Test
     void remove() {
         DoublyLinkedList list = new DoublyLinkedList();
+        assertFalse(list.remove(99));
         list.add(new Node(11));
         list.add(new Node(4));
 
@@ -78,6 +79,7 @@ class DoublyLinkedListTest {
     @Test
     void removeAll(){
         DoublyLinkedList list = new DoublyLinkedList();
+        list.removeAll(99);
         list.add(new Node(11));
         list.add(new Node(7));
         list.add(new Node(7));
