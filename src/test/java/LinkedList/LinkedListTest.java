@@ -11,6 +11,7 @@ class LinkedListTest {
         assertNull(list.head);
         list.add(new Node(1));
         assertEquals(list.tail, list.head);
+
         list.add(new Node(2));
         assertEquals(2, list.tail.value);
         list.add(new Node(7));
@@ -38,19 +39,36 @@ class LinkedListTest {
         LinkedList list = new LinkedList();
         assertNull(list.tail);
         assertNull(list.head);
+        assertFalse(list.remove(3));
+
+        list.add(new Node(22));
+        list.remove(22);
+        assertNull(list.head);
+        assertNull(list.tail);
+        assertEquals(0, list.size());
+        list.clear();
+
         list.add(new Node(1));
         list.add(new Node(2));
         list.add(new Node(7));
         list.add(new Node(5));
+
+        assertTrue(list.remove(1));
+        assertEquals(2, list.head.value);
+
         assertTrue(list.remove(5));
         assertEquals(7, list.tail.value);
         assertNull(list.tail.next);
+
         list.add(new Node(8));
         assertEquals(8, list.tail.value);
+
         assertFalse(list.remove(10));
-        assertEquals(1, list.head.value);
-        assertTrue(list.remove(2));
-        assertTrue(list.remove(8));
+        assertEquals(2, list.head.value);
+
+        assertTrue(list.remove(7));
+        assertEquals(list.head.next, list.tail);
+        assertEquals(2, list.size());
     }
 
     @org.junit.jupiter.api.Test

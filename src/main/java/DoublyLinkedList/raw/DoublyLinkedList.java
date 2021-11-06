@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class DoublyLinkedList {
     public Node head;
     public Node tail;
-    public int count;
+    public int size;
 
     public DoublyLinkedList() {
         head = null;
@@ -39,7 +39,7 @@ public class DoublyLinkedList {
         //IMPLEMENT
     }
 
-    public int count() {
+    public int size() {
         //IMPLEMENT
         return -1;
     }

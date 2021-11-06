@@ -13,11 +13,11 @@ public class LinkedList {
     }
 
     public void add(Node item) {
-        if (this.head == null)
-            this.head = item;
+        if (head == null)
+            head = item;
         else
-            this.tail.next = item;
-        this.tail = item;
+            tail.next = item;
+        tail = item;
     }
 
     public Node find(int value) {
@@ -44,25 +44,27 @@ public class LinkedList {
     public boolean remove(int value) {
         Node node = head;
         Node newNode;
-        if (head.value == value){
-            if (head.next == null){
-                head = tail = null;
-            }else
-                head = head.next;
-            return true;
-        }
-        while (node.next != null){
-            if (node.next.value == value){
-                if (node.next == tail){
-                    node.next = null;
-                    tail = node;
-                }else {
-                    newNode = node.next.next;
-                    node.next = newNode;
-                }
+        if (head != null) {
+            if (head.value == value) {
+                if (head.next == null) {
+                    head = tail = null;
+                } else
+                    head = head.next;
                 return true;
-            }else {
-                node = node.next;
+            }
+            while (node.next != null) {
+                if (node.next.value == value) {
+                    if (node.next == tail) {
+                        node.next = null;
+                        tail = node;
+                    } else {
+                        newNode = node.next.next;
+                        node.next = newNode;
+                    }
+                    return true;
+                } else {
+                    node = node.next;
+                }
             }
         }
         return false;
