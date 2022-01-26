@@ -65,6 +65,7 @@ class DynamicArrayTest {
         assertEquals("World!", dynamicArray.get(16));
         assertEquals(17, dynamicArray.size());
         assertEquals(32, dynamicArray.capacity);
+        assertThrows(IndexOutOfBoundsException.class, ()->dynamicArray.add(18, "Exception"));
     }
 
     @Test
@@ -109,7 +110,9 @@ class DynamicArrayTest {
 
 //      "ze", "as", "aa", "ss", "az", "td", "qe", "as", "er", "wt", "uy", "xg", "ht", "tp"
         assertEquals("ze",dynamicArray.get(0));
-
+        assertThrows(IndexOutOfBoundsException.class, () -> dynamicArray.remove(-1));
+        assertDoesNotThrow(() -> dynamicArray.remove(13));
+        assertThrows(IndexOutOfBoundsException.class, () -> dynamicArray.remove(14));
     }
 
 }
