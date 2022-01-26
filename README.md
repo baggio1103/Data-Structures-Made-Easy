@@ -9,5 +9,5 @@
 # [Introduction to Doubly-LinkedList](https://java-jedi.medium.com/what-is-a-doubly-linkedlist-4907d48f1dad)
 ![Doubly-LinkedList](https://miro.medium.com/max/1400/1*p8qQ48GASuEyB6dpmpEbOA.png)
 
-#[Introduction to Arrays](https://java-jedi.medium.com/what-is-an-array-b6cd0e08f248)
+# [Introduction to Arrays](https://java-jedi.medium.com/what-is-an-array-b6cd0e08f248)
 ![Arrays](https://miro.medium.com/max/1400/1*2wQoufBXAjvHlvyH8sl9eQ.png)
