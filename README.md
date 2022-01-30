@@ -11,3 +11,6 @@
 
 # [Introduction to Arrays](https://java-jedi.medium.com/what-is-an-array-b6cd0e08f248)
 ![Arrays](https://miro.medium.com/max/1400/1*2wQoufBXAjvHlvyH8sl9eQ.png)
+
+# [Introduction to Dynamic Arrays](https://java-jedi.medium.com/what-is-a-dynamic-array-89c0011ff5b6)
+![Arrays](https://miro.medium.com/max/1400/1*QWwnv8BfBHJIwNq4vlfTaQ.png)
