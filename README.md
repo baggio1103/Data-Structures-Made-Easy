@@ -14,3 +14,6 @@
 
 # [Introduction to Dynamic Arrays](https://java-jedi.medium.com/what-is-a-dynamic-array-89c0011ff5b6)
 ![Arrays](https://miro.medium.com/max/1400/1*QWwnv8BfBHJIwNq4vlfTaQ.png)
+
+# [Introduction to Stack](https://medium.com/p/7e81e97ec112)
+![Stack](https://miro.medium.com/max/1400/1*9aVHFvdDFu2l1aQY1Sjf1g.png)
