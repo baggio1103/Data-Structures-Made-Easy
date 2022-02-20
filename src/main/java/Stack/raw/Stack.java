@@ -3,17 +3,17 @@ package Stack.raw;
 public class Stack<T> {
 
     public Stack() {
-        //Implement
+        //Implement inner storage of stack
     }
 
     public int size() {
         //Implement
-        return 0;
+        return 0; // if stack is empty
     }
 
     public T pop() {
         //Implement
-        return null;
+        return null; // If stack is empty
     }
 
     public void push(T item) {

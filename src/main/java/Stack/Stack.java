@@ -17,23 +17,19 @@ public class Stack<T> {
         if (size > 0) {
             T value = head.value;
             head = head.next;
-            if (head != null) {
-                head.prev = null;
-            }
             size--;
             return value;
         }
         return null;
     }
 
-    public void push(T item) {
+    public void push(T value) {
         if (head == null) {
-            head = new Item<>(item);
+            head = new Item<>(value);
         } else {
             Item<T> temp = head;
-            head = new Item<>(item);
+            head = new Item<>(value);
             head.next = temp;
-            temp.prev = head;
         }
         size++;
     }
@@ -46,12 +42,11 @@ public class Stack<T> {
 
 class Item<T> {
     public Item<T> next;
-    public Item<T> prev;
     public T value;
 
     public Item(T value) {
         this.value = value;
-        this.next = this.prev = null;
+        this.next = null;
     }
 
 }
