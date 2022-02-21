@@ -18,5 +18,5 @@
 # [Introduction to Stack](https://medium.com/p/7e81e97ec112)
 ![Stack](https://miro.medium.com/max/1400/1*9aVHFvdDFu2l1aQY1Sjf1g.png)
 
-#[Introduction to Queue](https://java-jedi.medium.com/what-is-a-queue-5272273d1f45)
+# [Introduction to Queue](https://java-jedi.medium.com/what-is-a-queue-5272273d1f45)
 ![Queue](https://miro.medium.com/max/1400/1*mgeq-AjvgG15h-8pjtLP7A.png)
